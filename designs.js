@@ -3,9 +3,9 @@
  * the grid on the table canvas element in html page.
  */
 function makeGrid() {
-    var height = document.getElementById('input_height').value;
-    var width = document.getElementById('input_width').value;
-    var table = document.getElementById('pixel_canvas');
+    var height = $('input_height').val();
+    var width = $('input_width').val();
+    var table = $('pixel_canvas');
 	// Table grid creation code :
     table.innerHTML = '';
     var tbody = document.createElement('tbody');
