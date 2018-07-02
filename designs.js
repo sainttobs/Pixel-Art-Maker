@@ -5,7 +5,7 @@
 function makeGrid() {
     var height = $('input_height').val();
     var width = $('input_width').val();
-    var table = $('pixel_canvas');
+    var table = document.getElementById('pixel_canvas');
 	// Table grid creation code :
     table.innerHTML = '';
     var tbody = document.createElement('tbody');
