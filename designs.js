@@ -5,7 +5,7 @@
 function makeGrid() {
     var height = $('input_height').val();
     var width = $('input_width').val();
-    var table = document.getElementById('pixel_canvas');
+    var table = $('pixel_canvas');
 	// Table grid creation code :
     table.innerHTML = '';
     var tbody = document.createElement('tbody');
@@ -23,6 +23,6 @@ function makeGrid() {
 
 //jQuery to change color of pixel when clicked.
 $('body').on('click', 'td', function() {
-	var color = document.getElementById('colorPicker').value;
+	var color = $('colorPicker').val();
     $(this).css('background-color', color);
 });
