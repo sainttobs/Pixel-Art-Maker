@@ -3,9 +3,9 @@
  * the grid on the table canvas element in html page.
  */
 function makeGrid() {
-    var height = $('input_height').val();
-    var width = $('input_width').val();
-    var table = $('pixel_canvas');
+    var height = $('#input_height').val();
+    var width = $('#input_width').val();
+    var table = document.getElementById('pixel_canvas');
 	// Table grid creation code :
     table.innerHTML = '';
     var tbody = document.createElement('tbody');
@@ -23,6 +23,6 @@ function makeGrid() {
 
 //jQuery to change color of pixel when clicked.
 $('body').on('click', 'td', function() {
-	var color = $('colorPicker').val();
+	var color = $('#colorPicker').val();
     $(this).css('background-color', color);
 });
